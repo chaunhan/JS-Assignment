@@ -1,0 +1,46 @@
+:root {
+	--color: #6ac0f2;
+}
+body {
+	height: 100vh;
+	background: linear-gradient(45deg, #004585, #50c8aa);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #242628;
+}
+.slider img {
+    width: 700px;
+    height: 580px;
+}
+.slider button {
+    height: 50px;
+    width: 50px;
+    outline: none;
+	border: none;
+	color: white;
+	background-color: transparent;
+	border: 1px solid var(--color);
+	padding: 10px 20px;
+	border-radius: inherit;
+	cursor: pointer;
+	transition: 0.25s;
+    margin: 5px;
+    
+}
+.slider button:hover {
+	background-color: var(--color);
+}
+.slider .count {
+    position:absolute;
+    top:90%;left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/trangchu.css">
+    <link rel="stylesheet" href="./css/slider.css">
+</head>
+<body>
+    <div class="top">
+        <div class="bar">
+            <a href="trangchu.html" class="top_bar button">Trang chủ</a>
+            <a href="./slider.html" class="top_bar button">Slider</a>
+            <a href="./baitap.html" class="top_bar button">Bài Tập</a>
+            <a href="form.html" class="top_bar button">Form</a>
+        </div>
+    </div>
+    <div class="container">
+        <form class="form" onsubmit="return validateForm(this)">
+            <H2 style="text-align: center;">ĐĂNG KÝ THÀNH VIÊN</H2>
+            <div>
+                <label for="msv">Mã sinh viên:</label>
+                <input type="msv" id="msv" name="msv" placeholder="Mã Sinh Viên">
+                <p id="xmsv"></p>
+            </div>
+            <div>
+                <label for="ten">Họ và tên:</label>
+                <input type="ten" id="ten" name="ten" placeholder="Họ và Tên">
+                <p></p>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@xyz.dce">
+                <p></p>
+            </div>
+            <div>
+                <label for="gioitinh">Giới Tính</label>
+                <input type="checkbox" id="nam" name="Nam" value="Nam">
+                <label for="nam"> Nam</label>
+                <input type="checkbox" id="nu" name="nu" value="Nữ">
+                <label for="nu"> Nữ</label>
+            </div>
+            <div class="checkbox" >
+                <label for="sothich">Sở thích:</label>
+                <input type="checkbox" id="docsach" name="DocSach" value="Đọc Sách">
+                <label for="docsach"> Đọc sách</label>
+
+                <input type="checkbox" id="dulich" name="DuLich" value="Du Lịch">
+                <label for="dulich"> Du lịch</label>
+
+                <input type="checkbox" id="amnhac" name="AmNhac" value="Âm Nhạc">
+                <label for="amnhac"> Âm Nhạc</label>
+
+                <input type="checkbox" id="amthuc" name="AmThuc" value="Ẩm Thực">
+                <label for="amthuc"> Ẩm Thực</label>
+
+                <input type="checkbox" id="khac" name="Khac" value="Khác">
+                <label for="khac"> Khác</label>
+            </div>
+            <div class="checkbox">
+                <label for="country">Quốc tịch:</label>      
+        
+                <select id="country" name="country">
+                    <option value="none" >Chọn quốc tịch</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Åland Islands">Åland Islands</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Viet Nam">Viet Nam</option>
+                    <option value="Virgin Islands, British">Virgin Islands, British</option>
+                    <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                    <option value="Western Sahara">Western Sahara</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+            </div>
+            <div>
+                <label for="ghichu">Ghi chú:</label>
+
+                <textarea name="GhiChu" id="ghichu" cols="85" rows="10"></textarea>
+                
+            </div>
+                <input class="button" type="submit" value="Đăng Ký" >
+        </form>
+    </div>
+</body>
+<script src="./js/form.js"></script>
+</html>

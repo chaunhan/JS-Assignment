@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài xỉu</title>
+    
+    <link rel="stylesheet" href="./css/trangchu.css">
+</head>
+<style>
+    .taixiu .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .taixiu .row #But {
+        height:40px;
+        width: 100px;
+        background-color: greenyellow;
+        cursor:pointer;
+    }
+    .taixiu .row .item {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ccc;
+        text-align: center;
+        margin-left: 10px;
+        
+    }
+    .taixiu .item:hover{
+        background-color: aqua;
+    }
+    .taixiu .kq{
+        text-align: center;
+        color: rgb(255, 238, 0);
+    }
+    button {
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            cursor:pointer;
+        }
+    .baucua .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .baucua .row #But {
+        height:40px;
+        width: 100px;
+        background-color: greenyellow;
+        cursor:pointer;
+    }
+    .baucua .row .item {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ccc;
+        text-align: center;
+        margin-left: 10px;
+        
+    }
+    .baucua .item:hover{
+        background-color: aqua;
+    }
+    .baucua .kq{
+        text-align: center;
+        color: rgb(255, 251, 0);
+    }
+</style>
+<body>
+    <div class="top">
+        <div class="bar">
+            <a href="trangchu.html" class="top_bar button">Trang chủ</a>
+            <a href="slider.html" class="top_bar button">Slider</a>
+            <a href="baitap.html" class="top_bar button">Bài Tập</a>
+            <a href="form.html" class="top_bar button">Form</a>
+            <a href="game.html" class="top_bar button">Game</a>
+        </div>
+    </div>
+<div class="container">
+    <div class="taixiu">
+        <div class="row">
+            <h2 style="color: rgb(204, 0, 0);">Chọn Cửa Muốn Cược</h2> 
+        </div>
+        <div class="row">
+            <div class="item">
+                <button id="name" value="0" onclick="tai(this)">Tài</button>
+            </div>
+            <div class="item">
+                <button id="name" value="1" onclick="xiu(this)">Xỉu</button>
+            </div>
+        </div>
+        <div class="row">
+            <label for="input2" style="color:rgb(50, 47, 79)"><h2>Chọn Giá Cược:</h2></label>
+            <select id="input2" name="none">
+                <option value="100">100k</option>
+                <option value="200">200k</option>
+                <option value="300">300k</option>
+                <option value="400">400k</option>
+                <option value="500">500k</option>
+                <option value="1000">1000k</option>
+            </select>
+        </div>
+        <div class="row">
+            <input type="button" value="Cược" onclick="Cuoc()" id="But">
+        </div>
+
+        <div class="kq">
+            <h2 id="bal"></h2>
+            <h2 id="bal2"></h2>
+            <h2 id="in"></h2>
+            <h2 id="het"></h2>
+            <h2 id="kq"></h2>
+            <h2 id="out"></h2>
+        </div>
+    </div>
+    <div class="baucua">
+        <div class="row">
+            <h2 style="color: coral;">Chọn Cửa Muốn Cược</h2> 
+        </div>
+        <div class="row">
+            <div class="item">
+                <button id="name" value="0" onclick="huou(this)">Hươu</button>
+            </div>
+            <div class="item">
+                <button id="name" value="1" onclick="bau(this)">Bầu</button>
+            </div>
+            <div class="item">
+                <button id="name" value="2" onclick="ga(this)">Gà</button>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="item">
+                <button id="name" value="3" onclick="ca(this)">Cá</button>
+            </div>
+            <div class="item">
+                <button id="name" value="4" onclick="cua(this)">Cua</button>
+            </div>
+            <div class="item">
+                <button id="name" value="5" onclick="tom(this)">Tôm</button>
+            </div>
+            
+        </div>
+        <div class="row">
+            <h2 style="color: coral;">Chỉ có thể chọn 1 cửa.</h2>
+            
+        </div>
+        <div class="row">
+            <label for="input5">Chọn Giá Cược:</label>
+            <select id="input5" name="none">
+                <option value="100">100k</option>
+                <option value="200">200k</option>
+                <option value="300">300k</option>
+                <option value="400">400k</option>
+                <option value="500">500k</option>
+                <option value="1000">1000k</option>
+            </select>
+        </div>
+        <div class="row">
+            <input type="button" value="Chốtttttttttttt" onclick="Cuoc2()" id="But">
+        </div>
+
+        <div class="kq">
+            <h2 id="balbs"></h2>
+            <h2 id="bal2bs"></h2>
+            <h2 id="inbs"></h2>
+            <h2 id="hetbs"></h2>
+            <h2 id="kqbs"></h2>
+            <h2 id="outbs"></h2>
+        </div>
+        
+    </div>
+
+</body>
+<script src="./js/taixiu.js"></script>
+<script src="./js/baucua.js"></script>
+</html>

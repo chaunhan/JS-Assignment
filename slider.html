@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/trangchu.css">
+    <script src="./js/slider.js"></script>
+</head>
+
+<body onload="viewHinh()">
+    <div class="top">
+        <div class="bar">
+          <a href="trangchu.html" class="top_bar button">Trang chủ</a>
+          <a href="#home" class="top_bar button">Slider</a>
+          <a href="baitap.html" class="top_bar button">Bài Tập</a>
+          <a href="form.html" class="top_bar button">Form</a>
+        </div>
+    </div>
+    <div class="slider">
+        <div>
+            <button onclick="pre()"><</button>
+        </div>
+        <div class="hinh">
+            <img src="./img/0.JPG" id="img" >
+        </div>
+        <div>
+            <button onclick="next()">></button>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="count">
+        <h2 id="vitri"></h2>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

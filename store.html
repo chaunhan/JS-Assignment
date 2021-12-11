@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./css/trangchu.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="top">
+        <div class="bar">
+            <a href="#home" class="top_bar button">Trang chủ</a>
+            <a href="./slider.html" class="top_bar button">Slider</a>
+            <a href="./baitap.html" class="top_bar button">Bài Tập</a>
+            <a href="form.html" class="top_bar button">Form</a>
+        </div>
+    </div>
+
+    <div class="content" style="max-width:2000px;margin-top:46px">
+        <h3 class="border">DashBoard</h3>
+            <div class="tab_bar">
+                <ul class="menu">           
+                    <li><a href="store.html">Cửa Hàng</a></li>
+                    <li><a href="cart.html">Giỏ Hàng</a></li>
+                </ul>
+            </div>
+    </div>
+        <div class="container content_padding" id="DashBoard">
+            <div class="main_content">
+                <h2 class="Title">Sản Phẩm</h2>
+                <article>
+                        <div class="card">
+                            <span class="like"><i class='bx bx-heart'></i></span>
+                            <span class="cart"><i class='bx bx-cart-alt' ></i></span>
+                            <div class="card__img">
+                                <img src="./img/air-jordan-1-hyper-royal1.png" alt="" />
+                            </div>
+                            <h2 class="card__title">Jordan 1 Royal</h2>
+                            <p class="card__price"><sup>$</sup><span>99</span></p>
+                            <div class="card__size">
+                                <h3>Size:</h3>
+                                <span onclick="chonSize(this)">6</span>
+                                <span onclick="chonSize(this)">7</span>
+                                <span onclick="chonSize(this)">8</span>
+                                <span onclick="chonSize(this)">9</span>
+                            </div>
+                            <div class="card__action">
+                                <button onclick="add(this)">Add cart</button>
+                            </div>
+                        </div>
+                </article>
+                <article>
+                    <div class="card">
+                        <span class="like"><i class='bx bx-heart'></i></span>
+                        <span class="cart"><i class='bx bx-cart-alt' ></i></span>
+                        <div class="card__img">
+                            <img src="./img/air-jordan-1-mid-se-utility-shoes.png" alt="" />
+                        </div>
+                        <h2 class="card__title">Jordan 1 Utility</h2>
+                        <p class="card__price"><sup>$</sup><span>99</span></p>
+                        <div class="card__size">
+                                <h3>Size:</h3>
+                                <span onclick="chonSize(this)">6</span>
+                                <span onclick="chonSize(this)">7</span>
+                                <span onclick="chonSize(this)">8</span>
+                                <span onclick="chonSize(this)">9</span>
+                            </div>
+                        <div class="card__action">
+                            <button  onclick="add(this)">Add cart</button>
+                        </div>
+                    </div>
+                        <div class="card">
+                            <span class="like"><i class='bx bx-heart'></i></span>
+                            <span class="cart"><i class='bx bx-cart-alt' ></i></span>
+                            <div class="card__img">
+                                <img src="./img/Nike Zoom KD 12.png" alt="" />
+                            </div>
+                            <h2 class="card__title">Nike Zoom KD 12</h2>
+                            <p class="card__price"><sup>$</sup><span>99</span></p>
+                            <div class="card__size">
+                                <h3>Size:</h3>
+                                <span onclick="chonSize(this)">6</span>
+                                <span onclick="chonSize(this)">7</span>
+                                <span onclick="chonSize(this)">8</span>
+                                <span onclick="chonSize(this)">9</span>
+                            </div>
+                            <div class="card__action">
+                                <button  onclick="add(this)">Add cart</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="like"><i class='bx bx-heart'></i></span>
+                            <span class="cart"><i class='bx bx-cart-alt' ></i></span>
+                            <div class="card__img">
+                                <img src="./img/air-jordan-1-fearless.png" alt="" />
+                            </div>
+                            <h2 class="card__title">Jordan 1 FearLess</h2>
+                            <p class="card__price"><sup>$</sup><span>99</span></p>
+                            <div class="card__size">
+                                <h3>Size:</h3>
+                                <span onclick="chonSize(this)">6</span>
+                                <span onclick="chonSize(this)">7</span>
+                                <span onclick="chonSize(this)">8</span>
+                                <span onclick="chonSize(this)">9</span>
+                            </div>
+                            <div class="card__action">
+                                <button  onclick="add(this)">Add cart</button>
+                            </div>
+                        </div>
+                </article>
+            </div>
+        </div>
+</body>
+<script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+<script src="./js/register.js"></script>
+</html>
