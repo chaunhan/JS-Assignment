@@ -11,7 +11,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
    
 </head>
-<body>
+<body onload="checklogin();">
     <div class="top">
         <div class="bar">
             <a href="#home" class="top_bar button">Trang chủ</a>
@@ -32,7 +32,7 @@
     </div>
     <div class="container content_padding" id="DashBoard">
     <div class="main_content">
-        <div class="logout">
+        <div class="logout" >
             <div>
                 <h3 id="tk"></h3>
                 <input type="submit" value="LOG OUT" onclick="logout();">

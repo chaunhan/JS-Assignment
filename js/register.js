@@ -55,6 +55,7 @@ const DangNhap = () => {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
   loginUser += username;
+  
   localStorage.setItem("username", JSON.stringify(loginUser));
   if (username !== "" && password !== "") {
     const userLocal = localStorage.getItem("users");
@@ -75,16 +76,21 @@ const DangNhap = () => {
   }
 };
 
+function checklogin() {
+
 var users = localStorage.getItem("username");
 var username = JSON.parse(users);
-if(username == null){
+if(username != null){
+  document.getElementById('tk').innerText = `Bạn đang đăng nhập bằng tài khoản ${username}.`;
+}else{
   alert("Hãy đăng nhập để tiếp tục!!!")
-  location.href = "./trangchu.html";
+  logout();
+  }
 }
-document.getElementById('tk').innerText = `Bạn đang đăng nhập bằng tài khoản ${username}.`;
-
 
 
 const logout = () => {
-  location.href = "./login.html";
-}
+  window.localStorage.clear();
+  window.location.reload(true);
+  window.location.replace('./login.html');
+};
