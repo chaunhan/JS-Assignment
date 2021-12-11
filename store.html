@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/trangchu.css">
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/cart.css">
+
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body onload="checklogin();">
+<body>
     <div class="top">
         <div class="bar">
             <a href="trangchu.html" class="top_bar button">Trang chủ</a>
@@ -49,7 +50,7 @@
                                 <span onclick="chonSize(this)">8</span>
                                 <span onclick="chonSize(this)">9</span>
                             </div>
-                            <div class="card__action">
+                            <div class="card__action xoa">
                                 <button onclick="add(this)">Add cart</button>
                             </div>
                         </div>
@@ -70,8 +71,8 @@
                                 <span onclick="chonSize(this)">8</span>
                                 <span onclick="chonSize(this)">9</span>
                             </div>
-                        <div class="card__action">
-                            <button  onclick="add(this)">Add cart</button>
+                        <div class="card__action xoa">
+                            <button onclick="add(this)">Add cart</button>
                         </div>
                     </div>
                         <div class="card">
@@ -89,8 +90,8 @@
                                 <span onclick="chonSize(this)">8</span>
                                 <span onclick="chonSize(this)">9</span>
                             </div>
-                            <div class="card__action">
-                                <button  onclick="add(this)">Add cart</button>
+                            <div class="card__action xoa">
+                                <button onclick="add(this)">Add cart</button>
                             </div>
                         </div>
                         <div class="card">
@@ -108,15 +109,29 @@
                                 <span onclick="chonSize(this)">8</span>
                                 <span onclick="chonSize(this)">9</span>
                             </div>
-                            <div class="card__action">
+                            <div class="card__action xoa">
                                 <button  onclick="add(this)">Add cart</button>
                             </div>
                         </div>
                 </article>
-            </div>
-        </div>
+                <div class="modal hide">
+                    <div class="modal__inner">
+                        <div class="modal__header">
+                            <p>Store</p>
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="modal__body">
+                            <h2>Thông báo</h2>
+                            <p id="textbox"></p>
+                        </div>
+                        <div class="modal__footer">
+                            <button>Close</button>
+                        </div>
+                    </div>
+                </div>
 </body>
 <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
 <script src="./js/register.js"></script>
+<script src="./js/modal.js"></script>
 </html>

@@ -44,27 +44,25 @@ function add(x) {
             kt =1;
             productSL += cart[i].productSL;
             cart[i].productSL = productSL;
-            
+
             break;
         }console.log(cart[i]);
     }
     if(productSize == 0){
-        alert("hãy chọn size giày");
+        document.getElementById("textbox").innerHTML = `Hãy chọn size giày`;
         return false;
     }else if(productSize != 0 && kt == 0){
-        alert(`Thêm vào giỏ hàng ${productName} Side: ${productSize}`);
+        document.getElementById("textbox").innerHTML = `Thêm vào giỏ hàng ${productName} Side: ${productSize}`;
         cart.push(sp);
-        // for (let i = 0; i < cart.length; i++) {
-            localStorage.setItem("Cart", JSON.stringify(cart));   
-        // } 
+        localStorage.setItem("Cart", JSON.stringify(cart));   
         return true;
-    }else if(!(productSize != 0 && kt == 0)) { 
-        alert(`Thêm vào giỏ hàng ${productName} Side: ${productSize}`);  
+    }else if(!(productSize != 0 && kt == 0)) {
+        document.getElementById("textbox").innerHTML = `Thêm vào giỏ hàng ${productName} Side: ${productSize}`;
+        cart.push(sp); 
         localStorage.setItem("Cart", JSON.stringify(cart));
-
         return true;
     }else{
-        alert("hãy chọn size giày");
+        document.getElementById("textbox").innerHTML = `Hãy chọn size giày`;
         return false;
     }
     
@@ -107,7 +105,7 @@ function showcart(){
         <th>${giohang[i].productPrice}<sup>$</sup></th>
         <th>${giohang[i].productSL}</th>
         <th>${tien}<sup>$</sup></th>
-        <th>
+        <th class="xoa">
             <button onclick="xoa(this)">Xóa</button>
         </th>
     </tr>`;
@@ -130,7 +128,7 @@ function chonSize(x) {
         size = 0 ;
     }
     if(size == 0 ){
-        alert("Hãy chọn size giày.")
+        document.getElementById("textbox").innerHTML = `Hãy chọn size giày`;
     }
 }
 
