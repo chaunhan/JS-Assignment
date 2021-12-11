@@ -275,7 +275,7 @@ function xoasv(array) {
         alert("hãy nhập mã số sv cần xóa");
     }else{
         array.forEach(element => {
-            if (element.mssv === x) {
+            if (element.mssv == x) {
                 var tam = array.indexOf(element)
                 array.splice(tam, 1)
             }
