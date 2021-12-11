@@ -77,7 +77,12 @@ const DangNhap = () => {
 
 var users = localStorage.getItem("username");
 var username = JSON.parse(users);
+if(username == null){
+  alert("Hãy đăng nhập để tiếp tục!!!")
+  location.href = "./trangchu.html";
+}
 document.getElementById('tk').innerText = `Bạn đang đăng nhập bằng tài khoản ${username}.`;
+
 
 
 const logout = () => {
